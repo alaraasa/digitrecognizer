@@ -21,5 +21,5 @@ prediction = classifier.predict(xtest)
 
 count = 0
 for i in range(0, 21000):
-    count += 1 if prediction[1] == actual_label[i] else 0
+    count += 1 if prediction[i] == actual_label[i] else 0
 print("Accuracy=", (count/21000)*100)
