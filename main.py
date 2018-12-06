@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier # 92.7...
 data = pd.read_csv("dataset/train.csv").as_matrix()
 print(data)
 
-# Default n_estunators=10
+# Default n_estimators=10
 # Result 92.7..
 # Current result 95.9..
 classifier = RandomForestClassifier(n_estimators=100)
